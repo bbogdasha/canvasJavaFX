@@ -1,0 +1,41 @@
+{
+    "class": "com.bogdan.Save",
+    "shapes": [
+        {
+            "SHAPE_SIZE": 50.0,
+            "class": "com.bogdan.Ball",
+            "x": 208.0,
+            "y": 160.0
+        },
+        {
+            "SHAPE_SIZE": 146.0,
+            "class": "com.bogdan.Square",
+            "x": 188.0,
+            "y": 132.0
+        },
+        {
+            "SHAPE_SIZE": 50.0,
+            "class": "com.bogdan.Square",
+            "x": 266.0,
+            "y": 228.0
+        },
+        {
+            "SHAPE_SIZE": 132.0,
+            "class": "com.bogdan.Triangle",
+            "x": 196.0,
+            "y": 0.0
+        },
+        {
+            "SHAPE_SIZE": 50.0,
+            "class": "com.bogdan.Triangle",
+            "x": 234.0,
+            "y": 82.0
+        },
+        {
+            "SHAPE_SIZE": 50.0,
+            "class": "com.bogdan.Pacman",
+            "x": 110.0,
+            "y": 222.0
+        }
+    ]
+}
