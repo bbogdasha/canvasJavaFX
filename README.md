@@ -1,32 +1,46 @@
-# CanvasProgramJavaFX
-JavaFX Paint
+# Java FX Canvas
 
+The program allows you to create four simple shapes (circle, square, triangle, pakman). The origin of the block is at the top left. Some functions implemented.
 
-Управление: 
-1) Движение (право, влево, назад, вперед) - стрелочки.
-2) Добавление фигур (круг, квадрат, триугольник, пакман) - цифры 1,2,3,4 соответственно.
-3) Выделение - TAB.
-4) Сохранить - S.
-5) Загрузить - L.
-6) Удаление - DELETE.
+### Tech
 
+* JSON;
+* JavaFX;
+* Java 8. Lambda.
 
-Дз11
-Написать программу с использованием JavaFx:
+### Functions
 
-1) Можно добавить не менее 3 типов фигур
-2) У выбранной фигуры можно менять размер и двигать ее
-3) Фигуру можно удалить
-4) Фигуры можно объеденять в группы (агрегация) и клонировать
-5) Реализовать сохранение/загрузку состояния в файл
+* Creating shapes;
+* Removing shapes;
+* Change of size;
+* Moving shapes;
+* Selection of the active figure;
+* Saving the position of the figures in [JSON format](https://github.com/bbogdasha/canvasJavaFX/blob/master/Save.txt) and loading this save.
 
-В программе обязательно использовать интерфейсы и абстрактные классы.
+### Control
 
-Дополнительные задания:
+1) Movement (right, left, back, forward) - arrows;
+2) Adding shapes (circle, square, triangle, pacman) - numbers 1,2,3,4, respectively;
+3) Selection - TAB;
+4) Save - S;
+5) Load - L;
+6) Resize - +\-;
+7) Delete - DELETE.
 
-6) Сделать чтобы при движении фигуры не могли наехать друг на друга
-7) Реализовать запоминание траектории и воспроизведение
+### Result
 
+**1.** An example of creating, moving, selecting, resizing shapes:
 
-Выполнено: 1, 2, 3, 5
-Не выполнено: 4, 6, 7
+![Gif](https://github.com/bbogdasha/canvasJavaFX/blob/master/gif/create.gif)
+
+---
+
+**2.** Select and highlight the shape you want to remove:
+
+![Gif](https://github.com/bbogdasha/canvasJavaFX/blob/master/gif/delete.gif)
+
+---
+
+**3.** Implementation of saving the position of figures in the [JSON format](https://github.com/bbogdasha/canvasJavaFX/blob/master/Save.txt) and implementation of loading the save:
+
+https://github.com/bbogdasha/canvasJavaFX/blob/master/gif/save.gif
