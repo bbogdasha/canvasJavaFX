@@ -43,4 +43,4 @@ The program allows you to create four simple shapes (circle, square, triangle, p
 
 **3.** Implementation of saving the position of figures in the [JSON format](https://github.com/bbogdasha/canvasJavaFX/blob/master/Save.txt) and implementation of loading the save:
 
-https://github.com/bbogdasha/canvasJavaFX/blob/master/gif/save.gif
+![Gif](https://github.com/bbogdasha/canvasJavaFX/blob/master/gif/save.gif)
