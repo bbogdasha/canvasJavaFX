@@ -6,7 +6,7 @@ The program allows you to create four simple shapes (circle, square, triangle, p
 
 * JSON;
 * JavaFX;
-* Java 8. Lambda.
+* Java 8 Lambda.
 
 ### Functions
 
