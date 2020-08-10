@@ -1,5 +1,11 @@
-package com.bogdan;
+package com.bogdan.Controller;
 
+import com.bogdan.Logic.Base;
+import com.bogdan.Logic.Shape;
+import com.bogdan.Shapes.Ball;
+import com.bogdan.Shapes.Pacman;
+import com.bogdan.Shapes.Square;
+import com.bogdan.Shapes.Triangle;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import javafx.scene.canvas.GraphicsContext;
@@ -53,22 +59,22 @@ public class Board {
             case DIGIT1:
                 Shape ball = new Ball(gc, shapes, 100, 100);
                 shapes.add(ball);
-                selectNextShape();
+                selectLostShape();
                 break;
             case DIGIT2:
-                Shape square = new Square(gc, shapes, 70, 180);
+                Shape square = new Square(gc, shapes, 100, 100);
                 shapes.add(square);
-                selectNextShape();
+                selectLostShape();
                 break;
             case DIGIT3:
-                Shape triangle = new Triangle(gc, shapes, 180, 70);
+                Shape triangle = new Triangle(gc, shapes, 100, 100);
                 shapes.add(triangle);
-                selectNextShape();
+                selectLostShape();
                 break;
             case DIGIT4:
-                Shape pacman = new Pacman(gc, shapes, 240, 240);
+                Shape pacman = new Pacman(gc, shapes, 100, 100);
                 shapes.add(pacman);
-                selectNextShape();
+                selectLostShape();
                 break;
             case TAB:
                 selectNextShape();
@@ -95,7 +101,7 @@ public class Board {
         try (BufferedWriter buffer = new BufferedWriter(new FileWriter("Save.txt"))) {
             buffer.write(json);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Could not open file!");
         }
     }
 
@@ -110,13 +116,14 @@ public class Board {
             for (Shape shape : shapesList) {
                 ((Base) shape).setGc(gc);
             }
-
             shapes = shapesList;
-
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Could not open file!");
         }
+    }
 
+    private void selectLostShape() {
+        index = shapes.size() - 1;
     }
 
     private void selectNextShape() {

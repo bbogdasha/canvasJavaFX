@@ -1,6 +1,8 @@
-package com.bogdan;
+package com.bogdan.Logic;
 
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+
 import java.util.List;
 
 public abstract class Base implements Shape{
@@ -16,9 +18,6 @@ public abstract class Base implements Shape{
         this.shapes = shapes;
         this.x = x;
         this.y = y;
-
-        double SCREEN_X = gc.getCanvas().getWidth();
-        double SCREEN_Y = gc.getCanvas().getHeight();
     }
 
     public Base() {
@@ -110,5 +109,11 @@ public abstract class Base implements Shape{
         if (SHAPE_SIZE != 10){
             SHAPE_SIZE -= 2;
         }
+    }
+
+    @Override
+    public void draw() {
+        gc.setStroke(Color.BLACK);
+        gc.setLineWidth(2);
     }
 }

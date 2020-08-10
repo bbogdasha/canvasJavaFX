@@ -1,10 +1,12 @@
-package com.bogdan;
+package com.bogdan.Shapes;
 
+import com.bogdan.Logic.Base;
+import com.bogdan.Logic.Shape;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import java.util.List;
 
-public class Square extends Base{
+public class Square extends Base {
 
     public Square(GraphicsContext gc, List<Shape> shapes, double x, double y) {
         super(gc, shapes, x, y);
@@ -19,8 +21,6 @@ public class Square extends Base{
 
     @Override
     public void draw() {
-        gc.setStroke(Color.BLACK);
-        gc.setLineWidth(2);
         gc.strokeRoundRect(x, y, SHAPE_SIZE, SHAPE_SIZE, 0, 0);
     }
 

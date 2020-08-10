@@ -1,41 +1,29 @@
 {
-    "class": "com.bogdan.Save",
+    "class": "com.bogdan.Controller.Save",
     "shapes": [
         {
             "SHAPE_SIZE": 50.0,
-            "class": "com.bogdan.Ball",
-            "x": 208.0,
-            "y": 160.0
+            "class": "com.bogdan.Shapes.Pacman",
+            "x": 290.0,
+            "y": 156.0
         },
         {
-            "SHAPE_SIZE": 146.0,
-            "class": "com.bogdan.Square",
-            "x": 188.0,
-            "y": 132.0
+            "SHAPE_SIZE": 90.0,
+            "class": "com.bogdan.Shapes.Triangle",
+            "x": 264.0,
+            "y": 308.0
         },
         {
-            "SHAPE_SIZE": 50.0,
-            "class": "com.bogdan.Square",
-            "x": 266.0,
-            "y": 228.0
+            "SHAPE_SIZE": 60.0,
+            "class": "com.bogdan.Shapes.Triangle",
+            "x": 280.0,
+            "y": 248.0
         },
         {
-            "SHAPE_SIZE": 132.0,
-            "class": "com.bogdan.Triangle",
-            "x": 196.0,
-            "y": 0.0
-        },
-        {
-            "SHAPE_SIZE": 50.0,
-            "class": "com.bogdan.Triangle",
-            "x": 234.0,
-            "y": 82.0
-        },
-        {
-            "SHAPE_SIZE": 50.0,
-            "class": "com.bogdan.Pacman",
-            "x": 110.0,
-            "y": 222.0
+            "SHAPE_SIZE": 42.0,
+            "class": "com.bogdan.Shapes.Triangle",
+            "x": 290.0,
+            "y": 206.0
         }
     ]
 }

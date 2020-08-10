@@ -1,4 +1,6 @@
-package com.bogdan;
+package com.bogdan.Controller;
+
+import com.bogdan.Logic.Shape;
 
 import java.util.ArrayList;
 import java.util.List;

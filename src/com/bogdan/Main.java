@@ -1,5 +1,6 @@
 package com.bogdan;
 
+import com.bogdan.Controller.Board;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -9,8 +10,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private static final int BOARD_WIDTH = 800;
-    private static final int BOARD_HEIGHT = 800;
+    private static final int BOARD_WIDTH = 600;
+    private static final int BOARD_HEIGHT = 600;
     private Board board;
 
     public static void main(String[] args) { launch(args); }
